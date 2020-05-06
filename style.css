@@ -1,0 +1,120 @@
+/**CSS Reset**/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*global*/
+--bg: #206078;
+
+/** Main Styling**/
+html,
+body {
+    font-family: 'Open Sans', 'Montserrat';
+    font-weight: 300;
+    line-height: 1.7em;
+    background: var(--bg);
+/*    color: var(--bg);*/
+
+}
+
+/*scroll bar*/
+body::-webkitscrollbar {
+    width: 0.25rem;
+
+}
+
+body::-webkitscrollbar-track {
+    background: black;
+
+}
+
+body::-webkitscrollbar-thumb {
+    background: red;
+}
+
+
+#navbar {
+    position: fixed;
+    display: flex;
+    background-color: white;
+    box-shadow: -3px 0px 20px black;
+    padding: 0;
+    height: 100vh;
+    width: 5rem;
+
+}
+
+
+/* styling of list items for large screen*/
+#navbar ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+    max-width: 5rem;
+    width: 230%;
+    padding: 1rem;
+    top: 50px;
+    left: -1.8rem;
+}
+
+#navbar ul li {
+    padding: 2rem;
+    align-self: center;
+}
+
+#navbar ul li a {
+    padding: 0.8rem;
+
+
+}
+
+
+#icon1 path {
+    fill: #206078;
+
+}
+
+/*Small Screens*/
+@media only screen and (max-width: 600px) {
+    #navbar {
+        width: 100vw;
+        height: 5rem;
+        bottom: 0;
+        /*        top: 100px;*/
+    }
+
+    #navbar ul li {
+        padding: 4rem;
+        
+    }
+
+    #navbar ul li a {
+        padding: 0.8rem;
+    }
+
+    #navbar ul {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        top: 0.5rem;
+        left: 13.5rem;
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #navbar ul {
+        left: 10.8rem;
+    }
+    
+    }
+
+
+
+
+
